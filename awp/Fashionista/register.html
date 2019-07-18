@@ -1,0 +1,95 @@
+<html>
+<title>
+        <head>register</head>
+</title>
+
+    <body   background="image/register.png">
+
+    <form action="db/insertdb.php">
+<fieldset>
+       <legend style=color:white><h1>Personal Details</h1></legend>
+    <div>
+    <label style=color:white> First Name
+        <input name="First" type="text" placeholder="First Name" required>
+    </label> 
+    </div>
+
+<br/>
+<div>
+    <label style=color:white> Last Name
+        <input name="Last" type="text" placeholder="Last Name" required>
+        </label> 
+        </div>
+
+
+ <br/>
+
+    <div>
+    <label style=color:white> Email
+        <input name="Email" type="email" placeholder="Email id" required>
+    </label> 
+    </div>
+
+
+<br/>
+
+    <div>
+    <label style=color:white> Contact no.
+        <input name="Contact" type="tel" placeholder="+91 XXXXXXXXXX" pattern="[0-9]{10}" required>
+    </label> 
+    </div>
+
+    <div>
+            <label style=color:white> Gender</label>
+            <br/>
+            <input style=color:white type="radio" name="Gender" value="male" checked> Male </br>
+            <input type="radio" name="Gender" value="female" checked> Female </br>
+            <input type="radio" name="Gender" value="other" checked> other </br>
+            </div>
+
+</fieldset>
+
+<br/>
+
+<fieldset>
+    <legend style=color:white>Address </legend>
+<div> 
+    <label style=color:white> Billing address
+        <input name= " billing address" type="text" required>
+    </label>
+</div>
+
+<br/>
+
+<div> 
+        <label style=color:white> Pincode
+            <input name= " pincode" type="number" placeholder="XXXXXX" pattern="[0-5]{6}" required> 
+        </label>
+    </div>
+
+</br>
+
+    <div> 
+            <label style=color:white> city
+                    <input name= " city" type="text">
+                <select>
+
+                    <option value="pune">pune</option>
+                    <option value="mumbai">mumbai</option>
+                    <option value="bangalore">bangalore</option>
+                    <option value="hyderabad">hyderabad</option>
+                </select>
+          
+            </label>
+        </div>
+
+        
+</fieldset>
+
+<br/>
+
+<button type="submit"   class="registration">  Register </button>
+
+</form>
+</body>
+</html>

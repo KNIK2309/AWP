@@ -1,0 +1,66 @@
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+    
+    <div id="result">
+
+            <button onclick="counter()">click me</button>
+    </div>
+   <script>
+
+    function counter()
+    {
+
+            
+            if(typeof(Storage)!=="undefined")
+            {   if(localStorage.clickcount)
+                {
+                    
+                    localStorage.clickcount=Number(localStorage.clickcount)+1;
+                    
+                }
+                else
+                {
+                 
+                    localStorage.clickcount=1;
+                }
+                document.getElementById("result").innerHTML="counter"+localStorage.clickcount+"times(s)";
+            }
+            else{
+                
+                document.getElementById("result").innerHTML = "does not support web storage...";
+            }
+
+    }
+</script>
+    
+    <!--
+    <script>
+    if(typeof(storage)!=="undefined")
+    {
+        localStorage.setItem("cdac","pune,mumbai");
+
+        document.getElementById("result").innerHTML=localStorage.getItem("cdac");
+
+    }
+
+    else
+    {
+        document.getElementById("result").innerHTML="local storage not Supported";
+
+    }
+
+    
+    </script>    
+
+    -->
+
+</body>
+
+
+</html>
